@@ -29,7 +29,7 @@ st.write(
 def load_data():
     base_path = os.path.dirname(__file__)
     file_path = os.path.join(base_path, "all-data.csv")
-    return pd.read_csv(file_path)
+    return pd.read_csv(file_path,encoding="latin1")
 
 df = load_data()
 st.success("Dataset loaded from repository")
